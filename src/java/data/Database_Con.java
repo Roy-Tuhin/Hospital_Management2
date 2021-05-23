@@ -61,7 +61,7 @@ public class Database_Con {                                                     
     
     
     
-    public ArrayList<DoctorBin> showDoc() {                  // <Student> is our bin class                                         // F U N C T I O N     showStudents    🌿
+    public ArrayList<DoctorBin> showDoc() {                  // <DoctorBin> is  bin class                           // F U N C T I O N     showStudents    🌿
         
         
         
@@ -83,7 +83,7 @@ public class Database_Con {                                                     
                     String Specialist = rs.getString("Specialist");
                     String Timing = rs.getString("Timing");
 
-                    DoctorBin s = new DoctorBin(id, name, phone, Specialist,Timing);             // 's'  is Student object   
+                    DoctorBin s = new DoctorBin(id, name, phone, Specialist,Timing);             // 's'  is User object   
                     obj2.add(s);                                                            // 'obj2'   calling with  ArrayList object.
 
                 } while (rs.next());
@@ -147,5 +147,62 @@ public class Database_Con {                                                     
             System.out.println("There is a Exception2 in your code, thats why u r seeing this 💔");
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+   public boolean signup(String name, String email , String phone ,String password  ){  // information will add to our DataBase
+       boolean flag= false;
+       String sql = "   insert into user (name,phone,email,password) values ('"+name+"',   '"+email+"',    '"+phone+"',     '"+password+"')   ";              //sql query
+       
+       try{
+          
+           flag= stm.execute(sql);
+       }catch(Exception e){
+           e.printStackTrace();
+       }
+        return false;
+   }
+    
+ 
+
+
+
+
+
+
+   public User login(String email, String password){
+       User flag= null;
+       String sql = "   select * from user where     email='"+email+"'  and  password='"+password+"' ";              //sql query
+       
+       try{
+           ResultSet rs= stm.executeQuery(sql);
+           
+           if(rs.first()){
+ 
+               String phone = rs.getString("phone");
+               String name = rs.getString("name");
+               
+               flag= new User(email,password,phone,name);
+               
+           }
+       }catch(Exception e){
+           e.printStackTrace();
+       }
+        return flag;
+   }   
+    
+    
+    
+    
+    
+    
+    
 
 }

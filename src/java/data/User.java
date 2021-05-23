@@ -9,14 +9,15 @@ package data;
  *
  * @author TKR
  */
-public class Student {
-    String id, name, phone, email;
+public class User {
+    public String id, name, phone, email, password;
 
-    public Student(String id, String name, String phone, String email) {
-        this.id = id;
-        this.name = name;
-        this.phone = phone;
+    public User( String email, String password, String phone, String name) {
         this.email = email;
+        this.password = password;
+        this.phone = phone;
+        this.name = name;
     }
+
     
 }

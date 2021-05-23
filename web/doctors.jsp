@@ -79,7 +79,7 @@
 
 
 
-            <jsp:include page="elements/header.jsp"/>                            <!----------------footer-------------------------->    
+            <jsp:include page="elements/header.jsp"/>                            <!----------------header------------------------->    
 
 
 
@@ -90,7 +90,7 @@
 
 
 
-            <section class="hero hero-1 bg-overlay bg-overlay-dark">
+<!--            <section class="hero hero-1 bg-overlay bg-overlay-dark">
                 <div class="bg-section"> <img src="assets/images/sliders/1.jpg" alt="background" /></div>
                 <div class="container">
                     <div class="row">
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
 
             
             

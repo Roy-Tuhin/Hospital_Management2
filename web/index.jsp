@@ -73,7 +73,7 @@
 
 
             <!--            <header class="header header-light header-topbar" id="navbar-spy">
-            
+ 
                             <div class="top-bar">
                                 <div class="block-left">
                                     <p class="headline">
@@ -139,7 +139,7 @@
                                             </div>
                                         </div>
                                     </div>
-            
+
                                     <div class="module module-language">
                                         <div class="selected"><img src="assets/images/module-language/en.png" alt="alt" /><span>english</span><i class="fas fa-chevron-down"></i></div>
                                         <div class="lang-list">

@@ -1,7 +1,7 @@
 <%-- 
     Document   : header
     Created on : 21 May, 2021, 12:42:00 AM
-    Author     : TKR
+    Author     : Tuhin
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -18,53 +18,22 @@
                             </g>
                             </g>
                             </g>
-                            </svg>Our Clinic sees over 10,000 patients every year.
+                            </svg> 
                         </p>
-                        <div class="carousel owl-carousel" data-slide="1" data-slide-rs="1" data-autoplay="true" data-nav="false" data-dots="false" data-space="0" data-loop="true" data-speed="800"><a href="blog-grid-fullwidth.html"> Hear their real stories
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8" width="11" height="8">
-                                <g>
-                                <g>
-                                <g>
-                                <path class="shp1" d="M11 4L7.01 0L7.01 3L0 3L0 5L7.01 5L7.01 8L11 4Z"></path>
-                                </g>
-                                </g>
-                                </g>
-                                </svg></a><a href="blog-grid-fullwidth.html"> tips for eating healthy
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8" width="11" height="8">
-                                <g>
-                                <g>
-                                <g>
-                                <path class="shp1" d="M11 4L7.01 0L7.01 3L0 3L0 5L7.01 5L7.01 8L11 4Z"></path>
-                                </g>
-                                </g>
-                                </g>
-                                </svg></a><a href="blog-grid-fullwidth.html"> why wearing a mask
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8" width="11" height="8">
-                                <g>
-                                <g>
-                                <g>
-                                <path class="shp1" d="M11 4L7.01 0L7.01 3L0 3L0 5L7.01 5L7.01 8L11 4Z"></path>
-                                </g>
-                                </g>
-                                </g>
-                                </svg></a><a href="blog-grid-fullwidth.html"> why coronavirus cases rise ?
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8" width="11" height="8">
-                                <g>
-                                <g>
-                                <g>
-                                <path class="shp1" d="M11 4L7.01 0L7.01 3L0 3L0 5L7.01 5L7.01 8L11 4Z"></path>
-                                </g>
-                                </g>
-                                </g>
-                                </svg></a></div>
+
+                        
+
+                        
+                        
+                        
                     </div>
                     <div class="block-right">
                         <div class="top-contact">
                             <div class="contact-infos"><i class="fas fa-phone-alt"></i>
-                                <div class="contact-body"> <a href="tel:123-456-7890">emergency line: 002 010612457410</a></div>
+                                <div class="contact-body"> <a href="tel:123-456-7890">emergency line: 101</a></div>
                             </div>
                             <div class="contact-infos"><i class="fas fa-map-marker-alt"></i>
-                                <div class="contact-body"> <a href="#">location: brooklyn, new york </a></div>
+                                <div class="contact-body"> <a href="#">location: Kolkata, India </a></div>
                             </div>
                             <div class="contact-infos"><i class="fas fa-clock"></i>
                                 <div class="contact-body">
@@ -77,15 +46,6 @@
                         
                         
 
-<!--                        <div class="module module-language">
-                            <div class="selected"><img src="assets/images/module-language/en.png" alt="alt" /><span>english</span><i class="fas fa-chevron-down"></i></div>
-                            <div class="lang-list">
-                                <ul>
-                                    <li> <img src="assets/images/module-language/en.png" alt="alt" /><a href="#">english</a></li>
-                                    <li> <img src="assets/images/module-language/ar.png" alt="alt" /><a href="#">arabic</a></li>
-                                </ul>
-                            </div>
-                        </div>-->
 
 
 
@@ -105,15 +65,6 @@
                         
                         
                         
-<!--                        <div class="module module-language">
-                            <div class="selected"><img src="assets/images/module-language/en.png" alt="alt" /><span>english</span><i class="fas fa-chevron-down"></i></div>
-                            <div class="lang-list">
-                                <ul>
-                                    <li> <img src="assets/images/module-language/en.png" alt="alt" /><a href="#">english</a></li>
-                                    <li> <img src="assets/images/module-language/ar.png" alt="alt" /><a href="#">arabic</a></li>
-                                </ul>
-                            </div>
-                        </div>-->
 
 
 
@@ -123,45 +74,56 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <ul class="navbar-nav ">
-                            <li class="nav-item has-dropdown active" data-hover=""><a class="dropdown-toggle" href="#" data-toggle="dropdown"><span>Home</span></a>
-                                <ul class="dropdown-menu">
+                            <li class="nav-item  active" data-hover=""><a class="#" href="index.jsp" data-toggle="#"><span>Home</span></a>
+<!--                                <ul class="dropdown-menu">
                                     <li class="nav-item current"><a href="index.jsp"><span>Home main</span></a></li>
                                     <li class="nav-item"><a href="home-modern.html"><span>home modern</span></a></li>
                                     <li class="nav-item"><a href="home-classic.html"><span>home classic</span></a></li>
                                     <li class="nav-item"><a href="home-dentist.html"><span>home dentist</span></a></li>
                                     <li class="nav-item"><a href="home-pharmacy.html"><span>home pharmacy</span></a></li>
-                                </ul>
+                                </ul>-->
                             </li>
                             
                             
                             
                             
+               
                             
-                            <li class="nav-item has-dropdown" data-hover=""><a class="dropdown-toggle" href="#" data-toggle="dropdown"><span>about us</span></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="page-about.html"><span>about us</span></a></li>
-                                    <li class="nav-item"><a href="page-our-services.html"><span>medical services</span></a></li>
-                                    <li class="nav-item"><a href="single-service.html"><span>single service</span></a></li>
-                                    <li class="nav-item"><a href="page-pricing.html"><span>pricing &amp; plans</span></a></li>
-                                    <li class="nav-item"><a href="page-appointments.html"><span>appointments</span></a></li>
-                                    <li class="nav-item"><a href="page-faqs.html"><span>help &amp; fAQs</span></a></li>
-                                    <li class="nav-item"><a href="page-gallery.html"><span>our gallery</span></a></li>
-                                </ul>
+                            
+                            
+                            
+                            
+                            <li class="nav-item " data-hover=""><a class="#" href="doctors.jsp" ><span>doctors</span></a>
+
+                            </li>
+                            
+                            
+                            
+                             <li class="nav-item " data-hover=""><a class="#" href="signup.jsp" ><span>SIGN UP</span></a>
+
                             </li>
                             
                             
                             
                             
-                            
-                            <li class="nav-item has-dropdown" data-hover=""><a class="dropdown-toggle" href="#" data-toggle="dropdown"><span>doctors</span></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="doctors-timetable.html"><span>doctors timetable</span></a></li>
-                                    <li class="nav-item"><a href="doctors-standard.html"><span>doctors standard</span></a></li>
-                                    <li class="nav-item"><a href="doctors-modern.html"><span>doctors modern</span></a></li>
-                                    <li class="nav-item"><a href="doctors-grid.html"><span>doctors grid</span></a></li>
-                                    <li class="nav-item"><a href="doctors-single-modern.html"><span>single doctor modern</span></a></li>
-                                    <li class="nav-item"><a href="doctors-single-standard.html"><span>single doctor classic</span></a></li>
-                                </ul>
+                             <li class="nav-item" data-hover=""><a href="login.jsp"><span>LOGIN</span></a></li>
+                             
+                             
+                             
+                             
+      <!-- ----------------------------------  D Y N A M I C    U S E R     N A M E    -------------------------------------------->       
+                             
+                             
+                             <li  class="nav-item">  
+                                  <a href="#">
+   
+                                     
+                                     <span>
+                                         <% out.print(session.getAttribute("name"));  %>
+                                     </span>
+                                 </a>
+                                  
+                                 
                             </li>
                             
                             
@@ -206,9 +168,8 @@
                             </li>
                             
                             
-                            
-                            
-                            <li class="nav-item" id="contact" data-hover=""><a href="contact.html"><span>contact</span></a></li>
+                              
+                          
                         </ul>
                         <div class="module-holder">
 
@@ -217,7 +178,27 @@
                             </div>
 
 
-                            <div class="module-contact"><a class="btn btn--secondary" href="doctors-timetable.html">doctors' timetable</a><a class="btn btn--primary btn-line btn-line-after" href="page-appointments.html"> <span>make appointment</span><span class="line"> <span></span></span></a></div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <!--------------------------------- D Y N A M I C  Login User name ----------------------------------------->
+                            
+                            
+                            <div class="module-contact">
+                                <a class="btn btn--secondary" href="#"> 
+                                    <span> <% out.print(session.getAttribute("name"));  %></span>
+                                </a>
+                                <a class="btn btn--primary btn-line btn-line-after" href="page-appointments.html"> <span class="line"> <span></span></span></a>
+                            </div>
+                                
+                                
+                                
+                                
+                                
+                                
                         </div>
 
                     </div>
