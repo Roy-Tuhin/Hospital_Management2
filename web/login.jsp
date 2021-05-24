@@ -107,11 +107,11 @@
 
 
 
- <!------------------------------------------------------hola Login form----------------------------------------------------------------->    
+ <!------------------------------------------------------hola Login form--------------working on 2nd branch--------------------------------------------------->    
 
 
 
-            <section class="contact-info">
+<!--            <section class="contact-info">
                 <div class="container">
                     <div class="row">
                         <div class="contact-panel contact-panel-4">
@@ -129,7 +129,7 @@
                                             
                                             
                                             
-                                            <form  method="post" action="Login">  <!-------control goes to->>>Login.java [A K A servlet]------------------------------------------>
+                                            <form  method="post" action="Login">  -----control goes to->>>Login.java [A K A servlet]----------------------------------------
                                                 <div class="row">
                                                     
                                                     
@@ -167,7 +167,7 @@
 
                     </div>
                 </div>
-            </section>
+            </section>-->
 
 
 
