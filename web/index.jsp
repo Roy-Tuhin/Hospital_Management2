@@ -32,12 +32,16 @@
 
     </head>
     <body>
-<!--        <div class="preloader">
+        
+        
+        <div class="preloader">
             <div class="spinner">
                 <div class="dot1"></div>
                 <div class="dot2"></div>
             </div>
-        </div>-->
+        </div>
+        
+        
         <div class="cursor">
             <div class="cursor__inner cursor__inner--circle"></div>
             <div class="cursor__inner cursor__inner--dot"></div>
