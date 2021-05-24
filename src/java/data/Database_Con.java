@@ -10,7 +10,7 @@ import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Database_Con {                                                                                                 //  M A I N    C L A S S    💚
+public class Database_Con {                                                          //  M A I N    C L A S S    💚
 
     Connection con;
     Statement stm;
@@ -20,7 +20,7 @@ public class Database_Con {                                                     
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "");
 
-            stm = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);               // ??????????????????????????
+            stm = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE); // ??????????????????????????
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Database_Con.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -29,39 +29,10 @@ public class Database_Con {                                                     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    public void addStudent(String name, String phone, String email) {                                                                    // F U N C T I O N     addStudent     🌿
-        String sql;
-        
-        
-        
-        sql = "insert into student(name, phone,email) values ('" + name + "',  '" + phone + "',    '" + email + "')";
-
-        try {
-            stm.execute(sql);
-        } catch (SQLException ex) {
-            System.out.println(ex);
-        }
-    }
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    public ArrayList<DoctorBin> showDoc() {                  // <DoctorBin> is  bin class                           // F U N C T I O N     showStudents    🌿
+    public ArrayList<DoctorBin> showDoc() {                  // <DoctorBin> is  bin class   // F U N C T I O N  🌿
         
         
         
@@ -83,8 +54,8 @@ public class Database_Con {                                                     
                     String Specialist = rs.getString("Specialist");
                     String Timing = rs.getString("Timing");
 
-                    DoctorBin s = new DoctorBin(id, name, phone, Specialist,Timing);             // 's'  is User object   
-                    obj2.add(s);                                                            // 'obj2'   calling with  ArrayList object.
+                    DoctorBin s = new DoctorBin(id, name, phone, Specialist,Timing);  // 's'  is User object   
+                    obj2.add(s);                                                   // 'obj2'   calling with  ArrayList object.
 
                 } while (rs.next());
 
@@ -103,55 +74,7 @@ public class Database_Con {                                                     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    public void updateStudent(String name, String phone, String email, String id) {
-        String sql;
-        
-        
-        sql = "update  student set name='" + name + "',  phone='" + phone + "',    email='" + email + "'   where id= '" + id + "'         ";
 
-        try {
-            stm.execute(sql);
-        } catch (SQLException ex) {
-            System.out.println("There is a Exception2 in your code, thats why u r seeing this 💔");
-        }
-    }
-
-    
-    
-    
- 
-    
-    
-    
-    
-        
-    public void deleteStudent(String id) {
-        String sql;
-        
-        
-        sql = "delete from student where id ='" + id + "'";
-        try {
-            stm.execute(sql);
-        } catch (SQLException ex) {
-            System.out.println("There is a Exception2 in your code, thats why u r seeing this 💔");
-        }
-    }
-    
-    
-    
-    
-    
     
     
     
@@ -179,7 +102,7 @@ public class Database_Con {                                                     
 
    public User login(String email, String password){
        User flag= null;
-       String sql = "   select * from user where     email='"+email+"'  and  password='"+password+"' ";              //sql query
+       String sql = "   select * from user where     email='"+email+"'  and  password='"+password+"' ";      //sql query
        
        try{
            ResultSet rs= stm.executeQuery(sql);
@@ -199,10 +122,7 @@ public class Database_Con {                                                     
    }   
     
     
-    
-    
-    
-    
+
     
 
 }
