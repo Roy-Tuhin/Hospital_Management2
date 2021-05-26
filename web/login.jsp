@@ -164,7 +164,7 @@
                                                         <path class="bodyBGnormal" stroke="#3A5E77" stroke-width="2.5" stroke-linecap="round" stroke-linejoinn="round" fill="#FFFFFF" d="M200,158.5c0-20.2-14.8-36.5-35-36.5h-14.9V72.8c0-27.4-21.7-50.4-49.1-50.8c-28-0.5-50.9,22.1-50.9,50v50 H35.8C16,122,0,138,0,157.8L0,213h200L200,158.5z" />
                                                         <path fill="#DDF1FA" d="M100,156.4c-22.9,0-43,11.1-54.1,27.7c15.6,10,34.2,15.9,54.1,15.9s38.5-5.8,54.1-15.9 C143,167.5,122.9,156.4,100,156.4z" />
                                                         </g>
-                                                        
+
                                                         <g class="earL">
                                                         <g class="outerEar" fill="#ddf1fa" stroke="#3a5e77" stroke-width="2.5">
                                                         <circle cx="47" cy="83" r="11.5" />
@@ -175,7 +175,7 @@
                                                         <path d="M53.4 62.8C48.5 67.4 45 72.2 42.8 77c3.4-.1 6.8-.1 10.1.1-4 3.7-6.8 7.6-8.2 11.6 2.1 0 4.2 0 6.3.2-2.6 4.1-3.8 8.3-3.7 12.5 1.2-.7 3.4-1.4 5.2-1.9" fill="#fff" stroke="#3a5e77" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                                                         </g>
                                                         </g>
-                                                        
+
                                                         <g class="earR">
                                                         <g class="outerEar">
                                                         <circle fill="#DDF1FA" stroke="#3A5E77" stroke-width="2.5" cx="153" cy="83" r="11.5" />
@@ -186,7 +186,7 @@
                                                         <path fill="#FFFFFF" stroke="#3A5E77" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M146.6,62.8 c4.9,4.6,8.4,9.4,10.6,14.2c-3.4-0.1-6.8-0.1-10.1,0.1c4,3.7,6.8,7.6,8.2,11.6c-2.1,0-4.2,0-6.3,0.2c2.6,4.1,3.8,8.3,3.7,12.5 c-1.2-0.7-3.4-1.4-5.2-1.9" />
                                                         </g>
                                                         </g>
-                                                        
+
                                                         <path class="chin" d="M84.1 121.6c2.7 2.9 6.1 5.4 9.8 7.5l.9-4.5c2.9 2.5 6.3 4.8 10.2 6.5 0-1.9-.1-3.9-.2-5.8 3 1.2 6.2 2 9.7 2.5-.3-2.1-.7-4.1-1.2-6.1" fill="none" stroke="#3a5e77" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                                                         <path class="face" fill="#DDF1FA" d="M134.5,46v35.5c0,21.815-15.446,39.5-34.5,39.5s-34.5-17.685-34.5-39.5V46" />
                                                         <path class="hair" fill="#FFFFFF" stroke="#3A5E77" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M81.457,27.929 c1.755-4.084,5.51-8.262,11.253-11.77c0.979,2.565,1.883,5.14,2.712,7.723c3.162-4.265,8.626-8.27,16.272-11.235 c-0.737,3.293-1.588,6.573-2.554,9.837c4.857-2.116,11.049-3.64,18.428-4.156c-2.403,3.23-5.021,6.391-7.852,9.474" />
@@ -271,10 +271,10 @@
                                                 <div class="inputGroup inputGroup2 col-12 col-md-6 col-lg-6">
                                                     <label for="loginPassword" id="loginPasswordLabel"></label>
                                                     <input name="password" class="form-control" type="password" id="loginPassword" placeholder="Password"  style="width:470px; left: 50px;"/>
-                                                    <label id="showPasswordToggle" for="showPasswordCheck">Show
-                                                        <input id="showPasswordCheck" type="checkbox" />
-                                                        <div class="indicator"></div>
-                                                    </label>
+                                                          <label id="showPasswordToggle" for="showPasswordCheck"   style=" width: 100px;height: 20px;margin-left: 0px;margin-bottom: 0px;margin-right: 0px;left: 530px;">Show
+                                                    <input id="showPasswordCheck" type="checkbox" />
+                                                    <div class="indicator"></div>
+                                                </label>
                                                 </div>
 
 

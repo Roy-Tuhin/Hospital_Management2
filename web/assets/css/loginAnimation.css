@@ -109,7 +109,8 @@ form input[type='email'], form input[type="text"], form input[type="number"], fo
   margin: 0;
   padding: 0 1em 0;
   padding: .875em 1em 0;
-  background-color: #f3fafd;
+    background-color: #daeff9;
+
   border: solid 2px #217093;
   border-radius: 4px;
   -webkit-appearance: none;
