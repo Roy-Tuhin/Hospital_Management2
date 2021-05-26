@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+/* global Quad, TweenLite */
+
 (() => {
 
 

@@ -127,8 +127,13 @@
                         <div class="contact-panel contact-panel-4">
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <div class="contact-card" style="left:370px">
-                                        <div class="contact-body" >
+                                    <div class="contact-card" >
+                                        <div class="contact-body" >   <!-- style: left="370px"-->
+                                             <h5 class="card-heading">Login</h5>
+                                                                                    <p class="card-desc">Please feel welcome to contact our friendly reception staff with any general or
+                                                                                        medical enquiry. Our doctors will receive or return calls.</p>
+
+
 
 
 
@@ -261,7 +266,7 @@
                                                 <!--     name="email"    whatever user email, it it check with our database , if its in DB then LOGIN #complete-->
                                                 <div class="inputGroup inputGroup1 col-12 col-md-6 col-lg-6">
                                                     <label for="loginEmail" id="loginEmailLabel"></label>
-                                                    <input name="email" type="text" id="loginEmail" maxlength="254" class="form-control" placeholder="Email" style="width:470px; left: 50px" />
+                                                    <input name="email" type="text" id="loginEmail" maxlength="254" class="form-control" placeholder="Email" style="width:350px; left: 100px" />
                                                     <p class="helper helper1"></p>
                                                 </div>
 
@@ -270,8 +275,8 @@
                                                 <!--     name="password"    whatever user password, it it check with our database , if its in DB then LOGIN #complete-->
                                                 <div class="inputGroup inputGroup2 col-12 col-md-6 col-lg-6">
                                                     <label for="loginPassword" id="loginPasswordLabel"></label>
-                                                    <input name="password" class="form-control" type="password" id="loginPassword" placeholder="Password"  style="width:470px; left: 50px;"/>
-                                                          <label id="showPasswordToggle" for="showPasswordCheck"   style=" width: 100px;height: 20px;margin-left: 0px;margin-bottom: 0px;margin-right: 0px;left: 530px;">Show
+                                                    <input name="password" class="form-control" type="password" id="loginPassword" placeholder="Password"  style="width:350px; left: 100px;"/>
+                                                          <label id="showPasswordToggle" for="showPasswordCheck"   style=" width: 100px;height: 20px; left: 470px;">Show
                                                     <input id="showPasswordCheck" type="checkbox" />
                                                     <div class="indicator"></div>
                                                 </label>
@@ -302,7 +307,7 @@
 
 
 
-                                            <!--                                        <h5 class="card-heading">Login</h5>
+<!--                                                                                    <h5 class="card-heading">Login</h5>
                                                                                     <p class="card-desc">Please feel welcome to contact our friendly reception staff with any general or
                                                                                         medical enquiry. Our doctors will receive or return calls.</p>-->
 

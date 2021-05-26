@@ -39,7 +39,7 @@
                 <div class="dot1"></div>
                 <div class="dot2"></div>
             </div>
-        </div>
+</div>
         
         
         <div class="cursor">
