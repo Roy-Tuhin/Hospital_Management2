@@ -15,7 +15,7 @@
 
         <link href="assets/css/vendor.min.css" rel="stylesheet" />
         <link href="assets/css/style.css" rel="stylesheet" />
-
+        
         <script>
             (function (w, d, s, l, i) {
                 w[l] = w[l] || [];
@@ -39,7 +39,7 @@
                 <div class="dot1"></div>
                 <div class="dot2"></div>
             </div>
-        </div>
+</div>
         
         
         <div class="cursor">

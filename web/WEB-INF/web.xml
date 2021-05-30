@@ -4,6 +4,14 @@
         <servlet-name>Login</servlet-name>
         <servlet-class>servlet.Login</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Appointments</servlet-name>
+        <servlet-class>servlet.Appointments</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Appointments</servlet-name>
+        <url-pattern>/appointments</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
