@@ -127,12 +127,17 @@
                                             <h5 class="card-heading">SignUp</h5>
                                             <p class="card-desc">Please feel welcome to contact our friendly reception staff with any general or
                                                 medical enquiry. Our doctors will receive or return calls.</p>
+                                            
+                                            
+                                            
+                                            
+                                            
                                             <form  method="post" action="Signup">  <!----------------control goes to->>>Signup.java [A K A servlet]------------------------------------------>
-                                                
-                                                
-                                                
-                                                
-                                                
+                                            
+                                            
+                                            
+                                            
+                                            
                                                 <div class="svgContainer">
                                                     <div>
                                                         <svg class="mySVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
@@ -267,7 +272,7 @@
                                                     </div>
                                                     
                                                     
-                                                     <!--     name="email"    whatever user email, it it check with our database , if its in DB then LOGIN #complete-->
+                                                     <!--     name="email"    -->
                                                 <div class="inputGroup inputGroup1 col-12 col-md-12 col-lg-6">
                                                     <label for="loginEmail" id="loginEmailLabel"></label>
                                                     <input name="email" type="text" id="loginEmail" maxlength="254" class="form-control" placeholder="Email" style="width:283px; left: 10px; right:100px"/>
@@ -276,7 +281,7 @@
 
 
 
-                                                <!--     name="password"    whatever user password, it it check with our database , if its in DB then LOGIN #complete-->
+                                                <!--     name="password"    -->
                                                 <div class="inputGroup inputGroup2 col-12 col-md-6 col-lg-6">
                                                     <label for="loginPassword" id="loginPasswordLabel"></label>
                                                     <input name="password" class="form-control" type="password" id="loginPassword" placeholder="Password"  style=" width:274px; left: 20px;" />

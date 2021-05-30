@@ -191,7 +191,9 @@
                                 <a class="btn btn--secondary" href="#"> 
                                     <span> <% out.print(session.getAttribute("name"));  %></span>
                                 </a>
-                                <a class="btn btn--primary btn-line btn-line-after" href="page-appointments.html"> <span class="line"> <span></span></span></a>
+                                
+                                <a class="btn btn--secondary btn-line btn-line-after" href="page-appointments.jsp">
+                <span>make appointment</span><span class="line"> <span></span></span></a>
                             </div>
                                 
                                 
