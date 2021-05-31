@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package servlet;
 
+package servlet;
 
 import data.Database_Con;
 import java.io.IOException;
@@ -19,8 +14,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author TKR
  */
-@WebServlet(name = "Appointments", urlPatterns = {"/appointments"})
-public class Appointments extends HttpServlet {
+@WebServlet(name = "Appointment", urlPatterns = {"/Appointment"})
+public class Appointment extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,20 +30,22 @@ public class Appointments extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-
-            String clinicName = request.getParameter("clinicName");                //  input from user in page-appointments.jsp will store in #clinicName
-            String doctorName = request.getParameter("doctorName");                //  input from user in page-appointments.jsp will store in #doctorName
-            String patientName = request.getParameter("patientName");
-            String patientEmail = request.getParameter("patientEmail");
-            String patientPhone = request.getParameter("patientPhone");
+            /* TODO output your page here. You may use following sample code. */
+       
+            
+            String department = request.getParameter("department");
+            String doctor = request.getParameter("doctor");                      // Will take input from user in signup page
+            String name = request.getParameter("name");
+            String email = request.getParameter("email");
+            String phone = request.getParameter("phone");
             String date = request.getParameter("date");
             String time = request.getParameter("time");
-
-            Database_Con db = new Database_Con();           // db is --> Database_Con object
-            db.appointments(clinicName, doctorName, patientName, patientEmail, patientPhone, date, time);  // calling "appointments();" with -----> Database_Con object  // signup() function define in Database_Con
-
-            response.sendRedirect("index.jsp");
-
+               
+               Database_Con db = new Database_Con();           // Database_Con object
+               db.appointmentFun(department,doctor,name,email,phone,date,time);           // calling "signup();" with -----> Database_Con object  // signup() function define in Database_Con
+               
+               response.sendRedirect("login.jsp");
+            
         }
     }
 

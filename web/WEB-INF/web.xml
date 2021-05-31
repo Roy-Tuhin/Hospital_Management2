@@ -8,9 +8,17 @@
         <servlet-name>Appointments</servlet-name>
         <servlet-class>servlet.Appointments</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Appointment</servlet-name>
+        <servlet-class>servlet.Appointment</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Appointments</servlet-name>
         <url-pattern>/appointments</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Appointment</servlet-name>
+        <url-pattern>/Appointment</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

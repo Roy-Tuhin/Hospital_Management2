@@ -1,4 +1,4 @@
-<%@page import="data.AppointmentsBin"%>
+
 <%@page import="java.util.ArrayList"%>
 <%@page import="data.Database_Con"%>
 <%@page import="data.Database_Con"%>
@@ -132,7 +132,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-card">
+                        <div class="contact-card" >
                             <div class="contact-body">
                                 <h5 class="card-heading">book an appointment</h5>
                                 <p class="card-desc">Please feel welcome to contact our staff with any general or medical enquiry. Our doctors will receive or return any urgent calls.</p>
@@ -142,77 +142,138 @@
                                 
                                 
                                 
-                                <form  method="post" action="appointments">    <!--controll goes to Appointments.java /url:appointments #servlet-->
+                                <form  method="post" action="Appointment">    <!--controll goes to Appointment.java /url:appointments #servlet-->
                                     
                                     
                                     
-                                    <!--     name="clinicName"    whatever user clinicName-->
-                                    <div class="row">
-                                        <div class="col-12 col-md-12 col-lg-6">
-                                            <input name="clinicName"
-                                                   class="form-control" type="text"  placeholder="Clinic Name" required="" />
-                                        </div>
-                                        
-                                        
-                                        
-                                        <div class="col-12 col-md-12 col-lg-6">
-                                            <input name="doctorName"
-                                                   class="form-control" type="text"  placeholder="Doctor Name" required="" />
-                                        </div>
-                                        
-                                        
-                                        
-                                        <div class="col-12 col-md-12 col-lg-6">
-                                            <input name="patientName"
-                                                   class="form-control" type="text"  placeholder="Patient Name" required="" />
-                                        </div>
-                                        
-                                        
-                                        
-                                        
-                                        <div class="col-12 col-md-6 col-lg-6">
-                                            <input name="patientEmail" 
-                                                   class="form-control" type="text"  placeholder="Patient Email Address" required="" />
-                                        </div>
-                                        
-                                        
-                                        
-                                        
-                                        <div class="col-12 col-md-6 col-lg-4">
-                                            <input name="patientPhone" 
-                                                   class="form-control" type="text"  placeholder="Patient Phone Number" required="" />
-                                        </div>
-                                        
-                                        
-                                        
-                                        
-                                        <div class="col-12 col-md-6 col-lg-4">
-                                            <div class="date-select">
-                                                <input name="date" 
-                                                       class="form-control" type="text" onfocus="(this.type = 'date')" onblur="(this.type = 'text')" placeholder="select date"  value="" required="" /><i class="fas fa-calendar-day"></i>
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                        
-                                        
-                                        <div class="col-12 col-md-6 col-lg-4">
-                                            <div class="time-select">
-                                                <input name="time" 
-                                                       class="form-control" type="text" onfocus="(this.type = 'time')" onblur="(this.type = 'text')" placeholder="select time"  value="" required="" /><i class="fas fa-clock"></i>
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                        
-                                        
-                                        <div class="col-12">
-                                            <button type ="submit" class="btn btn--secondary btn-line btn-line-before btn--block"><span class="line"> <span> </span></span><span>make appointment</span></button>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="contact-result"></div>
-                                        </div>
-                                    </div>
+           
+                                      <div class="row">
+                                                    
+<!--                                                    
+                                                    <div class="col-12 col-md-12 col-lg-6">
+                                                        <input class="form-control" type="text" name="department" placeholder="choose department" required="" />
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <input class="form-control" type="text" name="doctor" placeholder="choose doctor"  required="" />
+                                                    </div>
+                                                    
+                                                    
+                                                          name="email"    
+                                                <div class="inputGroup inputGroup1 col-12 col-md-12 col-lg-6">
+                                                    <input name="name" type="text"  maxlength="254" class="form-control" placeholder="name" />
+                                                </div>
+                                                     
+                                                     
+                                                     
+                                                     <div class="inputGroup inputGroup1 col-12 col-md-12 col-lg-6">
+                                                    <input name="email" type="text"  maxlength="254" class="form-control" placeholder="email" />
+                                                </div>
+
+
+
+                                                     name="password"    
+                                                <div class="inputGroup inputGroup2 col-12 col-md-6 col-lg-6">
+                                                    <label for="loginPassword" id="loginPasswordLabel"></label>
+                                                    <input name="password" class="form-control" type="password" id="loginPassword" placeholder="Password"  style=" width:274px; left: 20px;" />
+                                                          <label id="showPasswordToggle" for="showPasswordCheck"   style="left:310px;">Show
+                                                    <input id="showPasswordCheck" type="checkbox" />
+                                                    <div class="indicator"></div>
+                                                </label>
+                                                </div>
+                                                    
+                                                    <div class="col-12">
+                                                        <button type ="submit"class="btn btn--secondary btn-line btn-line-before btn--block"><span class="line"><span> </span></span><span>submit request</span></button>
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="col-12">
+                                                        <div class="contact-result"></div>
+                                                    </div>
+                                                    
+                                                    
+                                                </div>-->
+                                    
+                                    
+
+
+
+  <div class="col-12 col-md-6">
+                    <div class="select-holder">
+                      <select class="form-control"  name="department">
+                        <option value="bathology clinic">bathology clinic</option>
+                        <option value="neurology clinic">neurology clinic </option>
+                        <option value="cardiology clinic">cardiology clinic </option>
+                      </select>
+                      <div class="badge">department</div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-12 col-md-6">
+                    <div class="select-holder">
+                      <select class="form-control" name="doctor">
+                        <option value="michael brian">michael brian</option>
+                        <option value="maria andoloro">maria andoloro</option>
+                        <option value="richard muldoone">richard muldoone</option>
+                      </select>
+                      <div class="badge">choose doctor</div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-12 col-md-12 col-lg-6">
+                    <input class="form-control" type="text" name="name" placeholder="Name" required="" />
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <input class="form-control" type="text" name="email" placeholder="Email" required="" />
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <input class="form-control" type="text" name="phone" placeholder="Phone" required="" />
+                  </div>
+
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="date-select">
+                      <input name="date" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+                        placeholder="select date" value="" required="" /><i
+                        class="fas fa-calendar-day"></i>
+                    </div>
+                  </div>
+
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="time-select">
+                      <input  name="time" class="form-control" type="text" onfocus="(this.type='time')" onblur="(this.type='text')"
+                        placeholder="select time"  value="" required="" /><i
+                        class="fas fa-clock"></i>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn--secondary btn-line btn-line-before btn--block"><span class="line"> <span>
+                        </span></span><span>make appointment</span></button>
+                  </div>
+                  <div class="col-12">
+                    <div class="contact-result"></div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
                                 </form>
                             </div>
 
@@ -266,3 +327,28 @@
 
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+<!-- <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="date-select">
+                                                <input name="date" 
+                                                       class="form-control" type="text" onfocus="(this.type = 'date')" onblur="(this.type = 'text')" placeholder="select date"  value="" required="" /><i class="fas fa-calendar-day"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="time-select">
+                                                <input name="time" 
+                                                       class="form-control" type="text" onfocus="(this.type = 'time')" onblur="(this.type = 'text')" placeholder="select time"  value="" required="" /><i class="fas fa-clock"></i>
+                                            </div>
+                                        </div>-->
