@@ -128,14 +128,14 @@ public class Database_Con {                                                     
    
    
    
-      public boolean appointments(String clinicName, String doctorName , String patientName ,String patientEmail, String patientPhone,  String date, String time){  // information will add to our DataBase
+   public boolean appointmentFun(String department, String doctor , String name ,String email, String phone, String date, String time  ){  // information will add to our DataBase
        boolean flag= false;
-       String sql = " insert into appointments (clinicName, doctorName, patientName, patientEmail, patientPhone, date, time) values ('"+clinicName+"',   '"+doctorName+"',    '"+patientName+"',     '"+patientEmail+"',  '"+date+"',   '"+time+"')   ";              //sql query
+       String sql = "   insert into appointments (department,doctor,name,email,phone,date,time) values ('"+department+"',   '"+doctor+"',    '"+name+"',     '"+email+"', '"+phone+"',  '"+date+"', '"+time+"'  )   ";              //sql query
        
        try{
           
            flag= stm.execute(sql);
-       }catch(SQLException e){
+       }catch(Exception e){
            e.printStackTrace();
        }
         return flag;
@@ -143,6 +143,6 @@ public class Database_Con {                                                     
     
     
 
-    
+
 
 }
