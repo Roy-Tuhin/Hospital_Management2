@@ -140,6 +140,84 @@ public class Database_Con {                                                     
        }
         return flag;
    }
+   
+   
+   
+   
+    public ArrayList<AppointmentsBin> showAppointments() {                  // <DoctorBin> is  bin class   // F U N C T I O N  🌿
+        
+        
+        
+        
+        String sql= "select * from appointments";
+
+        ArrayList<AppointmentsBin> obj2 = new ArrayList<>();           //  ArrayList object
+
+    
+        
+        try {
+            
+          ResultSet rs  = stm.executeQuery(sql);
+            if (rs.first()) {
+                do {
+                    String id = rs.getString("id");
+                    String department = rs.getString("department");
+                    String name = rs.getString("name");
+                    String doctor = rs.getString("doctor");
+                    String email = rs.getString("email");
+                    String phone = rs.getString("phone");
+                    String date = rs.getString("date");
+                    String time = rs.getString("time");
+
+
+                    AppointmentsBin s = new AppointmentsBin(id, department, doctor, name, email,phone,date,time);  // 's'  is User object   
+                    obj2.add(s);                                                   // 'obj2'   calling with  ArrayList object.
+
+                } while (rs.next());
+
+            } else {
+                System.out.println("No record found");
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e);
+
+        }
+
+        return obj2;
+    }
+    
+    
+    
+    
+    
+    
+    
+       public AdminBin adminLogin(String email, String password){
+       AdminBin flag= null;
+       String sql = "   select * from user where     email='"+email+"'  and  password='"+password+"' ";      //sql query
+       
+       try{
+           ResultSet rs= stm.executeQuery(sql);
+           
+           if(rs.first()){
+ 
+               String phone = rs.getString("phone");
+               String name = rs.getString("name");
+               
+               flag= new AdminBin(email,password,phone,name);
+               
+           }
+       }catch(Exception e){
+           e.printStackTrace();
+       }
+        return flag;
+   }   
+   
+    
+    
+    
+    
     
     
 

@@ -354,6 +354,23 @@
 
                                     </div>
                                 </div>
+                                
+ 
+                                
+                                
+                                <div class="col-12 col-lg-5 offset-lg-1 img-card-holder">
+                <div class="img-card img-card-2">
+                  <div class="bg-section"><img src="assets/images/admin/bg-18.svg" alt="image" /></div>
+                </div>
+              </div>
+                        
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                             </div>
                         </div>
 
