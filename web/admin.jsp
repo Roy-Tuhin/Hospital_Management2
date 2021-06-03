@@ -15,7 +15,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<img class="wave" src="assets/images/admin/bg-18.svg">
+	<img class="wave" src="assets/images/admin/doctor2.svg" style="width: 786px;">
 	<div class="container">
 		<div class="img">
 <!--			<img src="assets/images/admin/undraw_Login.svg">-->
@@ -30,7 +30,7 @@
                     
                     
                     
-			<form action="show-appointments.jsp">
+			 <form  method="post" action="Admin" >
 				<img src="assets/images/admin/undraw_Login.svg">
 				<h2 class="title">Admin</h2>
            		<div class="input-div one">
@@ -38,8 +38,8 @@
            		   		<i class="fas fa-user"></i>
            		   </div>
            		   <div class="div">
-           		   		<h5>Username</h5>
-           		   		<input type="text" class="input">
+           		   		<h5>Email</h5>
+           		   		<input name="email" type="text" class="input">
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -48,7 +48,7 @@
            		   </div>
            		   <div class="div">
            		    	<h5>Password</h5>
-           		    	<input type="password" class="input">
+           		    	<input name="password" type="password" class="input">
             	   </div>
             	</div>
             	<a href="#">Forgot Password?</a>

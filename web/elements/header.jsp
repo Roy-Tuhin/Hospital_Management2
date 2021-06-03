@@ -97,12 +97,12 @@
                             
                             
                             
-                             <li class="nav-item " data-hover=""><a class="#" href="signup.jsp" ><span>SIGN UP</span></a></li>
+                             <li class="nav-item " data-hover=""><a class="#" href="signup.jsp" ><span>SignUp</span></a></li>
                             
                             
                             
                             
-                             <li class="nav-item" data-hover=""><a href="login.jsp"><span>LOGIN</span></a></li>
+                             <li class="nav-item" data-hover=""><a href="login.jsp"><span>Login</span></a></li>
                              
                              
 <!--                              <li class="nav-item" data-hover=""><a href="admin.jsp"><span>Admin</span></a></li>-->

@@ -195,17 +195,17 @@ public class Database_Con {                                                     
     
        public AdminBin adminLogin(String email, String password){
        AdminBin flag= null;
-       String sql = "   select * from user where     email='"+email+"'  and  password='"+password+"' ";      //sql query
+       String sql = "   select * from admin where     email='"+email+"'  and  password='"+password+"' ";      //sql query
        
        try{
            ResultSet rs= stm.executeQuery(sql);
            
            if(rs.first()){
  
-               String phone = rs.getString("phone");
+             
                String name = rs.getString("name");
                
-               flag= new AdminBin(email,password,phone,name);
+               flag= new AdminBin(email,password,name);
                
            }
        }catch(Exception e){

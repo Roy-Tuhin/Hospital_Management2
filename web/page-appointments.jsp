@@ -202,11 +202,11 @@
   <div class="col-12 col-md-6">
                     <div class="select-holder">
                       <select class="form-control"  name="department">
-                        <option value="bathology clinic">bathology clinic</option>
-                        <option value="neurology clinic">neurology clinic </option>
-                        <option value="cardiology clinic">cardiology clinic </option>
+                        <option value="Bathology clinic">Bathology clinic</option>
+                        <option value="Nurology clinic">Neurology clinic </option>
+                        <option value="Cardiology clinic">Cardiology clinic </option>
                       </select>
-                      <div class="badge">department</div>
+                      <div class="badge">Department</div>
                     </div>
                   </div>
 
@@ -214,9 +214,9 @@
                   <div class="col-12 col-md-6">
                     <div class="select-holder">
                       <select class="form-control" name="doctor">
-                        <option value="michael brian">michael brian</option>
-                        <option value="maria andoloro">maria andoloro</option>
-                        <option value="richard muldoone">richard muldoone</option>
+                        <option value="Michael brian">Michael brian</option>
+                        <option value="Maria andoloro">Maria andoloro</option>
+                        <option value="Richard muldoone">Richard muldoone</option>
                       </select>
                       <div class="badge">choose doctor</div>
                     </div>

@@ -38,7 +38,7 @@ public class Admin extends HttpServlet {
 
             
             
-                String email = request.getParameter("email");
+              String email = request.getParameter("email");
               String password = request.getParameter("password");
                
                
@@ -51,7 +51,7 @@ public class Admin extends HttpServlet {
                usersession.setAttribute("id",u.id);
                usersession.setAttribute("email",u.email);
                usersession.setAttribute("password",u.password);
-               usersession.setAttribute("phone",u.phone);
+             
                usersession.setAttribute("name",u.name);
                
                

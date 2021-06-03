@@ -26,22 +26,9 @@
          
          
          
-         <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/showappointmentsbootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/js/vendor/animate/showAppointmentsAnimate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/js/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/js/vendor/perfect-scrollbar/perfect-scrollbar.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/css/showappointmentsutil.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/showappointmentsmain.css">
-<!--===============================================================================================-->
+<!--====================================show  appointments Table CSS file===========================================================-->	
+	<link rel="stylesheet" href="assets/css/tablemain.css">
+<!--===========================================================================================================================-->
 
 
 
@@ -107,113 +94,92 @@
 
 
 
-
-            <jsp:include page="elements/header.jsp"/>                            <!----------------header-------------------------->    
+ <!-----------------------------------------------------------------header-------------------------------------------------------->
+            <jsp:include page="elements/header.jsp"/>                               
 
 
 
 
 
  <!----------------------------------------------------------------show Appointments---------------------------------------------------------->    
+                            
+                                                
 
 
 
-<div class="limiter">
+
+         <div class="limiter">
 		<div class="container-table100">
 			<div class="wrap-table100">
-					<div class="table">
-
-						<div class="row header">
-							<div class="cell">
-								 Id
-							</div>
-							<div class="cell">
-								Department
-							</div>
-							<div class="cell">
-								Doctor
-							</div>
-							<div class="cell">
-								Name
-							</div>
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column1"  >Id</th>
+								<th class="column2" >Department</th>
+								<th class="column3">Doctor</th>
+								<th class="column4" >Name</th>
+								<th class="column5">Email</th>
+                                                                <th class="column5">Phone</th>
+                                                                <th class="column5">Date</th>
+                                                                <th class="column5">Time</th>
+                                                                
+                                                                
+								<th class="column5"> </th>
+								<th class="column6"> </th>
+							</tr>
+						</thead>
+                                                
+                                               
+						<tbody>
                                                     
-                                                    <div class="cell">
-								Email
-							</div>
                                                     
-                                                    <div class="cell">
-								Phone
-							</div>
-                                                    
-                                                    <div class="cell">
-								Date
-							</div>
-                                                    
-                                                    <div class="cell">
-								Time
-							</div>
-						</div>
-                                            
-                                            
-                                            
-                                            
-                                            <%
+                                                         <%
                                                Database_Con db= new Database_Con();
                                                ArrayList<AppointmentsBin> data=db.showAppointments();
                                              for (int i=0; i<data.size(); i++){
                                                  
                                             %>
-
-                                                
-                                                
-                                                
-                                                
-						<div class="row">
                                                     
                                                     
-                                                    <div class="cell" data-title="patient id">
-                                                            <%=data.get(i).id%> <!----------------getting id-------------------------->    
-							</div>
+                                                    
+							<tr>
+								<td class="column1"><img src=""> <%=data.get(i).id%>  </td>
+								<td class="column2"> <%=data.get(i).department%></td>
+								<td class="column3"> <%=data.get(i).doctor%></td>
+								<td class="column4"> <%=data.get(i).name%></td>
+                                                                <td class="column4"> <%=data.get(i).email%></td>
+                                                                <td class="column4"> <%=data.get(i).phone%></td>
+                                                                <td class="column4"> <%=data.get(i).date%></td>
+                                                                <td class="column4"> <%=data.get(i).time%></td>
+                                                              
+								<td class="column5"><span class="btn btn-success" style="border-radius: 23px;">Update</span></td>
+<!--                                                                <td class="column5"><span class="btn btn-circle btn-sm btn-primary fa" style="border-radius: 23px;">Update</span></td>-->
+                                                                <td class="column5"><span class="btn btn-circle btn-sm btn-info fa" style="border-radius: 23px;">Delete</span></td>
+<!--								<td></td>-->
+<!--								<td class="column6" style="text-align:left;">
+									<a class = "btn btn-circle btn-sm btn-primary fa fa-facebook" href>
+									</a>
+									<a class = "btn btn-circle btn-sm btn-danger fa fa-google-plus" href>
+									</a>
+									<a class = "btn btn-circle btn-sm btn-info fa fa-twitter" href>
+									</a>
+									<a class = "btn btn-circle btn-sm btn-warning fa fa-envelope" href>
+									</a>
+								</td>-->
+							</tr>
                                                         
-							<div class="cell" data-title="Department">
-                                                            <%=data.get(i).department%> <!----------------getting department-------------------------->    
-							</div>
-							<div class="cell" data-title="Doc name">
-								  <%=data.get(i).doctor%>
-							</div>
-                                                        
-                                                        <div class="cell" data-title="Patient Name">
-								  <%=data.get(i).name%>
-							</div>
-                                                        
-							<div class="cell" data-title="Patient email">
-								 <%=data.get(i).email%>
-							</div>
-							<div class="cell" data-title="Patient ph.">
-								 <%=data.get(i).phone%>
-							</div>
-                                                        
-                                                        <div class="cell" data-title="Appointment date">
-								 <%=data.get(i).date%>
-							</div>
-                                                        
-                                                        <div class="cell" data-title="Appointment time">
-								 <%=data.get(i).time%>
-							</div>
-						</div>
-                                                        
-    
-                                                
-                                                <% } %>
+                                                          <% } %>   
 
-					</div>
+						</tbody>
+                                                
+                                               
+					</table>
+				</div>
 			</div>
-		</div> 
-	</div>
-
-
-
-
+		</div>
+	</div>                                       
+        
 
 
 
@@ -250,24 +216,15 @@
         <script src="assets/js/functions.js"></script>
 
 
-        <!-----------------------------------------------login in aniamtion js link------------------------------>
+        <!-----------------------------------------------login in animtion js link------------------------------>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
         <script  src="assets/js/loginAnimation.js"></script>
+        <!-----------------------------------------------login in aniamtion js link------------------------------> 
         
         
+
         
-        <!-----------------------------------------------showAppointments js link------------------------------>
         
-        
-<!--===============================================================================================-->	
-	<script src="assets/js/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="assets/js/vendor/bootstrap/js/showAppointmentspopper.js"></script>
-	<script src="assets/js/vendor/bootstrap/js/showAppointmentsbootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="assets/js/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="js/showAppointmentsmain.js"></script>
 
 
 
