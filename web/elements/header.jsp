@@ -93,20 +93,19 @@
                             
                             
                             
-                            <li class="nav-item " data-hover=""><a class="#" href="doctors.jsp" ><span>doctors</span></a>
-
-                            </li>
+                            <li class="nav-item " data-hover=""><a class="#" href="doctors.jsp" ><span>doctors</span></a></li>
                             
                             
                             
-                             <li class="nav-item " data-hover=""><a class="#" href="signup.jsp" ><span>SIGN UP</span></a>
-
-                            </li>
+                             <li class="nav-item " data-hover=""><a class="#" href="signup.jsp" ><span>SignUp</span></a></li>
                             
                             
                             
                             
-                             <li class="nav-item" data-hover=""><a href="login.jsp"><span>LOGIN</span></a></li>
+                             <li class="nav-item" data-hover=""><a href="login.jsp"><span>Login</span></a></li>
+                             
+                             
+<!--                              <li class="nav-item" data-hover=""><a href="admin.jsp"><span>Admin</span></a></li>-->
                              
                              
                              
@@ -114,18 +113,18 @@
       <!-- ----------------------------------  D Y N A M I C    U S E R     N A M E    -------------------------------------------->       
                              
                              
-                             <li  class="nav-item">  
+<!--                             <li  class="nav-item">  
                                   <a href="#">
    
                                      
                                      <span>
-                                         <% out.print(session.getAttribute("name"));  %>
+                                        % out.print(session.getAttribute("name"));  %>
                                      </span>
                                  </a>
                                   
                                  
                             </li>
-                            
+                            -->
                             
                             
                             
@@ -156,15 +155,16 @@
                             
                             
                             
-                            <li class="nav-item has-dropdown" id="departments" data-hover=""><a class="dropdown-toggle" href="page-departments.html" data-toggle="dropdown"><span>departments</span></a>
-                                <ul class="dropdown-menu">
+<!--                            <li class="nav-item has-dropdown" id="departments" data-hover=""><a class="dropdown-toggle" href="admin.jsp" data-toggle="dropdown"><span>departments</span></a>-->
+                               <li class="nav-item" id="departments" data-hover=""><a href="admin.jsp" ><span>Admin</span></a>
+<!--                                <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="neurology-clinic.html"><span>neurology clinic</span></a></li>
                                     <li class="nav-item"><a href="pathology-clinic.html"><span>pathology clinic</span></a></li>
                                     <li class="nav-item"><a href="laboratory-analysis.html"><span>laboratory analysis</span></a></li>
                                     <li class="nav-item"><a href="pediatric-clinic.html"><span>pediatric clinic</span></a></li>
                                     <li class="nav-item"><a href="cardiac-clinic.html"><span>cardiac clinic</span></a></li>
                                     <li class="nav-item"><a href="ophthalmology-clinic.html"><span>ophthalmology clinic</span></a></li>
-                                </ul>
+                                </ul>-->
                             </li>
                             
                             
